@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Mona Information Technology Services</title>
+	</head>
+	<body>
+		<header class="contents" id="chat-header">
+			<div id="nav-container">
+				<div class="container">
+					<nav id="main-nav">
+						<input type="checkbox" id="menu-toggle" />
+						<a href="/">
+							<img
+								width="138"
+								height="80"
+								id="mits-logo"
+								src="/images/mits-logo.svg"
+								alt="Homepage"
+								class="h-5 w-auto"
+							/>
+							<span id="chat-extension">Chat</span>
+						</a>
+
+						<ul>
+							<li class="contents">
+								<a href="/archive.html">News &amp; events</a>
+							</li>
+							<li class="contents">
+								<a href="#services">Our Services</a>
+							</li>
+							<li class="contents">
+								<a href="#about">About M.I.T.S</a>
+							</li>
+							<li class="contents">
+								<a href="#faq">FAQ</a>
+							</li>
+							<li class="contents">
+								<a href="/contact">Contact</a>
+							</li>
+						</ul>
+					</nav>
+
+					<label for="menu-toggle" class="button tertiary z-10 lg:hidden">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="icon"
+							aria-hidden
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<use href="images/sprite.svg#menu" />
+						</svg>
+
+						<span class="sr-only">Menu</span>
+					</label>
+				</div>
+			</div>
+		</header>
+		<main class="section">
+			<div class="container" id="chat-container">
+				<div class="chat-header">
+					<h1>Live Chat</h1>
+					<p>You have been connected to a live agent.</p>
+				</div>
+
+				<ul class="chat-messages">
+					<li>
+						<div class="image-container mits">M.I.T.S</div>
+						<p>Hello, how can I help you today?</p>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<footer class="section" id="chat-footer">
+			<div class="container">
+				<form class="input-container">
+					<input
+						type="text"
+						placeholder="E.g. How do I reset my password?"
+						name="message"
+					/>
+
+					<button type="submit" class="button primary max-md:hidden">
+						<span>Send</span>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="icon"
+						>
+							<use href="images/sprite.svg#arrow_right" />
+						</svg>
+					</button>
+
+					<button type="submit" class="button primary icon-only md:hidden">
+						<span class="sr-only">Get your answer</span>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="currentColor"
+							class="icon"
+						>
+							<use href="images/sprite.svg#arrow_right" />
+						</svg>
+					</button>
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
